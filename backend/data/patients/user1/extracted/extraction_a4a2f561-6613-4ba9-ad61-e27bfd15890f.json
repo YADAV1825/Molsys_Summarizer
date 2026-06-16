@@ -1,0 +1,37 @@
+{
+  "patient_name": "Lyubochka Svetka",
+  "age": 41,
+  "gender": "Male",
+  "travel_and_exposure": {
+    "high_risk_transit_21_days": null,
+    "contact_with_sick_individuals": null,
+    "attended_healthcare_facility_abroad": null
+  },
+  "real_time_iot_vitals": {
+    "heart_rate_bpm": null,
+    "spo2_percentage": null,
+    "respiratory_rate_bpm": null,
+    "temperature_celsius": null,
+    "systolic_bp": null,
+    "diastolic_bp": null
+  },
+  "active_symptoms": {
+    "sudden_fever": null,
+    "unexplained_bleeding_or_bruising": null,
+    "severe_fatigue_or_weakness": null,
+    "gastrointestinal_distress": null,
+    "palpitations_or_panic": null
+  },
+  "critical_lab_markers": {
+    "platelet_count": 150000,
+    "wbc_count": 10570,
+    "ast_alt_liver_enzymes": "SGOT: 27.0 U/L, SGPT: 48.0 U/L",
+    "creatinine_kidney": 0.83,
+    "crp_inflammation": null
+  },
+  "underlying_vulnerabilities": {
+    "diabetes_uncontrolled": true,
+    "hypertension": null,
+    "immunosuppressed": null
+  }
+}

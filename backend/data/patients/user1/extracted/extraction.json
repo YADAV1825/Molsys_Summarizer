@@ -1,0 +1,53 @@
+{
+  "patient_name": "Lyubochka Svetka",
+  "age": 41,
+  "gender": "Male",
+  "travel_and_exposure": {
+    "attended_healthcare_facility_abroad": false,
+    "contact_with_sick_individuals": false,
+    "high_risk_transit_21_days": false
+  },
+  "real_time_iot_vitals": {
+    "systolic_bp": null,
+    "spo2_percentage": null,
+    "heart_rate_bpm": null,
+    "diastolic_bp": null,
+    "respiratory_rate_bpm": null,
+    "temperature_celsius": null
+  },
+  "active_symptoms": {
+    "gastrointestinal_distress": false,
+    "palpitations_or_panic": false,
+    "sudden_fever": false,
+    "severe_fatigue_or_weakness": false,
+    "unexplained_bleeding_or_bruising": false
+  },
+  "critical_lab_markers": {
+    "crp_inflammation": null,
+    "wbc_count": 10570,
+    "ast_alt_liver_enzymes": "SGOT: 27.0 U/L, SGPT: 48.0 U/L",
+    "creatinine_kidney": 0.83,
+    "platelet_count": 150000
+  },
+  "underlying_vulnerabilities": {
+    "diabetes_uncontrolled": true,
+    "hypertension": false,
+    "immunosuppressed": false
+  },
+  "source_files": [
+    "f1b40494-3ef4-459b-a363-8654020b8db1",
+    "7f4ee558-53a3-417f-ac55-88d2fae5bac5",
+    "d1c79406-28c2-4482-b6ca-4d316633f572",
+    "25d5d5f9-4242-42d3-be02-37878150e726",
+    "444c0d20-310c-4738-ab4b-ab2ed9afbece",
+    "efbe7c02-305a-4fcd-a1ba-a6c8ef7742bb",
+    "5a9cc6c3-69bf-4cd5-97b0-67d6ff91819a",
+    "5399d6f4-baa5-42ad-aa9d-61a6c148edfc",
+    "beaeb07a-47ad-424b-9990-54a3597d8cbe",
+    "2ad40041-ab55-4d2f-ae06-dc94cad4e792",
+    "f8f7f01f-98b4-40a2-88e8-12a11042e16a",
+    "5c1b666c-456b-48a5-a3f4-2f00eb12c685",
+    "a4a2f561-6613-4ba9-ad61-e27bfd15890f"
+  ],
+  "last_updated": "2026-06-16T05:20:45.201162+00:00"
+}

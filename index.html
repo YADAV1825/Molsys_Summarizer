@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kempe International Airport - Digital Health Command Center</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fa-solid fa-shield-virus logo-icon"></i>
+                <div class="logo-text">
+                    <h2>KEMPE</h2>
+                    <span>Digital Twin Health</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Passengers</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-circle-exclamation"></i> Health Alerts <span class="badge" id="sidebar-alert-badge">2</span></a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-network-wired"></i> Sensor Network</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gears"></i> Settings</a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="user-info">
+                        <h4>Molsys Command</h4>
+                        <span>Officer on Duty</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-title">
+                    <h1>Health & Outbreak Screening Command</h1>
+                    <p class="subtitle">Real-time Passenger Biosensor Telemetry & Digital Twin Monitor</p>
+                </div>
+                <div class="header-status">
+                    <div class="status-indicator">
+                        <span class="pulse-dot"></span>
+                        <span>Twin Sync: ACTIVE</span>
+                    </div>
+                    <div class="timestamp" id="live-time">16:54:00 UTC</div>
+                </div>
+            </header>
+
+            <!-- Metrics / KPI Row -->
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon blue"><i class="fa-solid fa-plane-arrival"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-label">Monitored Passengers</span>
+                        <h3 class="metric-value" id="metric-passengers">1,482</h3>
+                        <span class="metric-sub text-green"><i class="fa-solid fa-arrow-up"></i> +142/hr</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card alert-pulse">
+                    <div class="metric-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-label">Active Health Flags</span>
+                        <h3 class="metric-value text-red" id="metric-alerts">2</h3>
+                        <span class="metric-sub text-gold">Ebola Protocol Enabled</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon purple"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-label">Sensor Sync Rate</span>
+                        <h3 class="metric-value" id="metric-sync">98.4%</h3>
+                        <span class="metric-sub">1,458 Wearables Connected</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon gold"><i class="fa-solid fa-virus-covid"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-label">Risk Assessment Index</span>
+                        <h3 class="metric-value" id="metric-risk">Low (0.04)</h3>
+                        <span class="metric-sub">Outbreak Level Status</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Interactive Section -->
+            <section class="dashboard-grid">
+                <!-- Digital Twin Terminal Map -->
+                <div class="panel-card double-width">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h3>Terminal 1 - Digital Twin Passenger Flow</h3>
+                        </div>
+                        <div class="panel-actions">
+                            <span class="map-legend"><span class="dot green"></span> Normal</span>
+                            <span class="map-legend"><span class="dot gold"></span> Warning</span>
+                            <span class="map-legend"><span class="dot red"></span> Outbreak Flag</span>
+                        </div>
+                    </div>
+                    
+                    <div class="digital-twin-container">
+                        <!-- Stylized Airport SVG Overlay -->
+                        <div class="airport-map" id="airport-map">
+                            <div class="terminal-zone zone-a"><span>Gate 1-5 (A)</span></div>
+                            <div class="terminal-zone zone-b"><span>Security Checkpoint</span></div>
+                            <div class="terminal-zone zone-c"><span>Baggage & Customs</span></div>
+                            <div class="terminal-zone zone-d"><span>Duty Free Lounge</span></div>
+                            
+                            <!-- Dynamic dots will be placed here via Javascript -->
+                            <!-- Simulated Alert Target Indicator -->
+                            <div class="alert-radar" id="alert-radar-1" style="display:none;"></div>
+                            <div class="alert-radar" id="alert-radar-2" style="display:none;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Bio-Alert & Threat Assessment Log -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fa-solid fa-list-check"></i>
+                            <h3>Live Telemetry Threat Log</h3>
+                        </div>
+                        <div class="terminal-badge">LIVE</div>
+                    </div>
+                    
+                    <div class="log-container" id="telemetry-log">
+                        <!-- Log entries injected by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Row: Infographics & Wearable Stats -->
+            <section class="dashboard-grid">
+                <!-- Outbreak Vector Map & Diagnostics -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fa-solid fa-dna"></i>
+                            <h3>Biometric Distribution</h3>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <div class="bar-chart-container">
+                            <div class="chart-y-axis">
+                                <span>39°C</span>
+                                <span>38°C</span>
+                                <span>37°C</span>
+                                <span>36°C</span>
+                            </div>
+                            <div class="chart-bars" id="bar-chart">
+                                <!-- Bars built by JS representing real-time temperature spreads -->
+                            </div>
+                        </div>
+                        <div class="chart-label">Passenger Temperature Distribution Index</div>
+                    </div>
+                </div>
+
+                <!-- Outbreak Vector Map & Diagnostics -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            <h3>Outbreak Vector Diagnostics</h3>
+                        </div>
+                    </div>
+                    <div class="vector-diagnostics">
+                        <div class="diagnostic-item">
+                            <div class="diag-info">
+                                <span class="diag-name">Ebola Risk Vector</span>
+                                <span class="diag-status text-red">Active Monitoring</span>
+                            </div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill red" style="width: 85%;"></div></div>
+                        </div>
+                        
+                        <div class="diagnostic-item">
+                            <div class="diag-info">
+                                <span class="diag-name">Lassa Fever Vector</span>
+                                <span class="diag-status text-green">Cleared</span>
+                            </div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill green" style="width: 12%;"></div></div>
+                        </div>
+                        
+                        <div class="diagnostic-item">
+                            <div class="diag-info">
+                                <span class="diag-name">Marburg Vector</span>
+                                <span class="diag-status text-green">Cleared</span>
+                            </div>
+                            <div class="progress-bar-bg"><div class="progress-bar-fill green" style="width: 8%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Protocols Quick Action -->
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            <h3>Central Containment Actions</h3>
+                        </div>
+                    </div>
+                    <div class="actions-panel">
+                        <button class="action-btn btn-danger" id="trigger-containment-btn">
+                            <i class="fa-solid fa-radiation"></i> Trigger Containment Zone
+                        </button>
+                        <button class="action-btn btn-warning" id="reroute-flight-btn">
+                            <i class="fa-solid fa-plane-slash"></i> Notify Gate Reroute
+                        </button>
+                        <button class="action-btn btn-secondary" id="broadcast-alert-btn">
+                            <i class="fa-solid fa-bullhorn"></i> Broadcast Emergency Landing
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Alert Modal / Notification -->
+    <div class="alert-modal-overlay" id="alert-modal" style="display: none;">
+        <div class="alert-modal-box">
+            <div class="modal-header">
+                <i class="fa-solid fa-triangle-exclamation modal-icon"></i>
+                <h2>CRITICAL OUTBREAK DETECTED</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>Passenger ID:</strong> <span id="modal-passenger-id">#PX-8492</span></p>
+                <p><strong>Current Zone:</strong> Security Checkpoint (Terminal 1)</p>
+                <p><strong>Telemetry Readings:</strong></p>
+                <ul>
+                    <li>Temperature: <span class="text-red font-bold" id="modal-temp">39.4°C</span></li>
+                    <li>Heart Rate: <span class="text-red font-bold" id="modal-heart-rate">118 bpm</span></li>
+                    <li>Oxygen Saturation (SpO2): <span class="text-gold font-bold">91%</span></li>
+                </ul>
+                <p class="modal-warning">Ebola Outbreak Screening Alert. Direct physical containment recommended at Security Gate B.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modal-dismiss-btn">Acknowledge Alert</button>
+                <button class="btn btn-danger" id="modal-isolate-btn">Execute Isolation</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

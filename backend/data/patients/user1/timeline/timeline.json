@@ -1,0 +1,212 @@
+[
+  {
+    "timestamp": "2026-06-16T04:23:43.936850+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:24:27.677733+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:24:49.726082+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:25:08.163662+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:25:50.034696+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:26:12.947043+00:00",
+    "type": "questionnaire_completed",
+    "description": "Health questionnaire completed (Risk: LOW, Score: 0)",
+    "metadata": {
+      "risk_score": 0,
+      "risk_level": "LOW"
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:26:31.873817+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "f1b40494-3ef4-459b-a363-8654020b8db1",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:27:02.141506+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "7f4ee558-53a3-417f-ac55-88d2fae5bac5",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:27:21.400933+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "d1c79406-28c2-4482-b6ca-4d316633f572",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:32:59.124959+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "25d5d5f9-4242-42d3-be02-37878150e726",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:44:19.588097+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "444c0d20-310c-4738-ab4b-ab2ed9afbece",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:44:58.797202+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 0)",
+    "metadata": {
+      "file_id": "efbe7c02-305a-4fcd-a1ba-a6c8ef7742bb",
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:45:24.863426+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 0)",
+    "metadata": {
+      "file_id": "5a9cc6c3-69bf-4cd5-97b0-67d6ff91819a",
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:46:45.035577+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 0)",
+    "metadata": {
+      "file_id": "5399d6f4-baa5-42ad-aa9d-61a6c148edfc",
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-16T04:49:35.165669+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 0)",
+    "metadata": {
+      "file_id": "beaeb07a-47ad-424b-9990-54a3597d8cbe",
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-16T05:13:05.873925+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "2ad40041-ab55-4d2f-ae06-dc94cad4e792",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T05:15:35.827202+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "f8f7f01f-98b4-40a2-88e8-12a11042e16a",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T05:18:16.120399+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "5c1b666c-456b-48a5-a3f4-2f00eb12c685",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  },
+  {
+    "timestamp": "2026-06-16T05:20:49.713662+00:00",
+    "type": "pdf_upload",
+    "description": "Uploaded medical report (Risk: LOW, Score: 5)",
+    "metadata": {
+      "file_id": "a4a2f561-6613-4ba9-ad61-e27bfd15890f",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "model_used": "gemini-3-flash-lite",
+      "conditions_found": 1
+    }
+  }
+]

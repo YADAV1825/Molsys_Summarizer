@@ -1,0 +1,18 @@
+{
+  "risk_score": 5,
+  "risk_level": "LOW",
+  "breakdown": [
+    {
+      "factor": "Underlying health vulnerabilities",
+      "points": 5
+    }
+  ],
+  "recommendations": [
+    "Cleared for travel",
+    "No additional screening required"
+  ],
+  "conditions_found": 1,
+  "symptoms_found": 0,
+  "abnormal_labs_found": 0,
+  "calculated_at": "2026-06-16T05:20:45.214320+00:00"
+}

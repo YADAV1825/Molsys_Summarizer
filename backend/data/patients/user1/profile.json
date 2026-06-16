@@ -1,0 +1,13 @@
+{
+  "conditions": [
+    "Diabetes Uncontrolled"
+  ],
+  "symptoms": [],
+  "medications": [],
+  "updated_at": "2026-06-16T05:20:45.235239+00:00",
+  "last_risk_score": 5,
+  "last_risk_level": "LOW",
+  "patient_name": "Lyubochka Svetka",
+  "age": 41,
+  "gender": "Male"
+}
