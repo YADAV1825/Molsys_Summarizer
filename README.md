@@ -60,6 +60,41 @@ graph TD
 
 ## 📁 Detailed Project Structure & File Guide
 
+```text
+Molsys_Summarizer/
+├── backend/
+│   ├── api/
+│   │   ├── auth.py              # JWT Auth, registration, admin checking
+│   │   ├── chat_store.py        # Manages conversational chat histories
+│   │   ├── jobs.py              # In-memory async job tracker
+│   │   └── patient_store.py     # Critical DB layer: Saves, merges, and updates JSON/MD patient records
+│   ├── summarizer/
+│   │   ├── medical_pipeline.py  # Orchestrates full pipeline: PDF -> JSON -> Summaries -> Save
+│   │   ├── nvidia_client.py     # AI Engine: Prompts, schemas, & Lightning/NVIDIA API clients
+│   │   ├── pdf_processor.py     # PyMuPDF engine to extract raw text blocks from PDFs
+│   │   └── risk_engine.py       # Deterministic rules engine to calculate 0-100 Risk Score
+│   └── main.py                  # FastAPI entry point, defining all REST endpoints
+├── frontend/
+│   ├── src/
+│   │   ├── components/          # Reusable UI widgets (Chat bubbles, Sidebar, etc.)
+│   │   ├── pages/
+│   │   │   ├── AdminPage.jsx        # Command center for admins (lists all users)
+│   │   │   ├── DashboardPage.jsx    # User landing page with risk score
+│   │   │   ├── LoginPage.jsx        # Authentication (Login)
+│   │   │   ├── PatientPage.jsx      # Detailed medical record dashboard for the user
+│   │   │   ├── QuestionnairePage.jsx# Interactive AI health triage chat
+│   │   │   ├── RegisterPage.jsx     # Authentication (Sign up)
+│   │   │   └── UploadPage.jsx       # Drag-and-drop PDF pipeline trigger
+│   │   ├── App.jsx              # React Router setup
+│   │   └── index.css            # Custom styling, dark-mode colors, glassmorphism UI
+│   ├── package.json             # React/Vite dependencies
+│   └── vite.config.js           # Vite server configuration
+├── data/                        # Local file-based storage (Auto-generated)
+│   ├── users.json               # Credentials database
+│   └── patients/                # Per-user isolated folders containing all JSONs/MDs
+└── README.md                    # Project documentation
+```
+
 ### Backend (FastAPI / Python)
 The backend orchestrates all data flows, authentication, and LLM processing.
 
